@@ -404,7 +404,7 @@ def cleandir(operations, targets):
     if preserve_days != 0:
         dirs = filter_out_ndays(operations, dirs, preserve_days)
     if len(dirs) <= targets.target_backups:
-        sys.exit("Number of backups is less then requested to keep")
+        sys.exit()
 
     while True:
         do_del = None
